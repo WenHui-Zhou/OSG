@@ -38,12 +38,19 @@ OSG在VS2012中的环境配置
  -  在链接器目录下找到输入输入，在输入里头添加如下设置：
 
 在附依赖项中添加如下文件 ：
+
 OpenThreadsd.lib
+
 osgd.lib
+
 osgDBd.lib
+
 osgUtild.lib
+
 osgGAd.lib
+
 osgViewerd.lib
+
 osgTextd.lib
 
 
