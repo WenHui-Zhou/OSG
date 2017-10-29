@@ -11,8 +11,11 @@ OSG安装
 一下是重要文件的目录：
 
 > bin 文件夹 ————  C:\OSG\bin
+> 
 > include文件夹 ———— C:\OSG\include
+> 
 > lib 文件夹 ———— C:\OSG\lib
+> 
 > data 文件夹 ———— C:\OSG\data
 
 OSG在VS2012中的环境配置
