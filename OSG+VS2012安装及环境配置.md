@@ -80,3 +80,40 @@ osgTextd.lib
     }
 
 以上代码将显示一头牛的模型。
+
+注意：如果出现以下错误：
+
+C2144
+
+语法错误:“void”的前面应有“;”
+
+OSG_HelloWorld
+
+C:\Program Files (x86)\Windows Kits\8.1\Include\um\GL\gl.h
+
+1157
+
+错误
+
+C4430
+
+缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+
+OSG_HelloWorld
+
+C:\Program Files (x86)\Windows Kits\8.1\Include\um\GL\gl.h
+
+1157
+...
+
+解决方法是在所有头文件的前面加上 #include<Windows.h>
+
+出现这样问题的原因如下：
+
+1. 如果存在两个类的头文件a.h和b.h,在a.h中有这样的语句：#include "b.h",在b.h文件中有这样的语句：#include "a.h"   且在一个类中有另一个类的对象时   那么就会出现这样的错误。
+
+2. 没有包含要定义的类的头文件。
+
+3.项目中少加了宏定义，导致头文件重复定义或相应宏无法识别。
+
+4.当有多个头文件时，顺序写反也可能导致相关的错误，其根本是头文件中的预编译语句被隐去了
