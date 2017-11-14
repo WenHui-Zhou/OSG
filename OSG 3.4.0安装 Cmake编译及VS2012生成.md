@@ -33,14 +33,17 @@ OSG 3.4.0安装 Cmake编译及VS2012生成
  - BUILD_OSG_EXAMPLES:勾上
  - CMAKE_INSTALL_PERFIX : D:/OSG/OpenSceneGraph;
 
-点击configure后，将Advanced打勾，将BUILD_MFC_EXAMPLE 设置为on,然后进行最后一次的configure配置。点击generate，构建完成。
+点击configure后:
+
+ - 将Advanced打勾
+ - 将BUILD_MFC_EXAMPLE 设置为on,然后进行最后一次的configure配置
+ - 点击generate，构建完成
 
 第三步 编译生成
 --------
 
-用VS2012打开OpenSceneGraph.sln,生成-批生成，对ALL_BUILD进行生成，选择Debug和Release两个版本。这一步要花费很多时间。
-
-生成完成之后，再次点击生成，批生成，生成install下的debug和release版本。
+ - 用VS2012打开OpenSceneGraph.sln,生成-批生成，对ALL_BUILD进行生成，选择Debug和Release两个版本。这一步要花费很多时间。
+ - 生成完成之后，再次点击生成，批生成，生成install下的debug和release版本。
 
 第四步 数据转移
 --------
@@ -54,8 +57,9 @@ OSG 3.4.0安装 Cmake编译及VS2012生成
 ----------
 
 对系统变量设置如下：
-OSG_FILE_PATH: C:\OSG\data
-PATH：C:\OSG\bin;
+
+ - OSG_FILE_PATH: C:\OSG\data
+ - PATH：C:\OSG\bin;
 
 结语
 --
