@@ -39,15 +39,15 @@ OSG在VS2012中的环境配置
 
 在附依赖项中添加如下文件 ：
 
-OpenThreadsd.lib
-osgd.lib
-osgDBd.lib
-osgUtild.lib
-osgGAd.lib
-osgViewerd.lib
-osgTextd.lib
-osgVolumed.lib
-osgManipulatord.lib
+    OpenThreadsd.lib
+    osgd.lib
+    osgDBd.lib
+    osgUtild.lib
+    osgGAd.lib
+    osgViewerd.lib
+    osgTextd.lib
+    osgVolumed.lib
+    osgManipulatord.lib
 
 
 以上就配置好了环境。下面是一个代码示例：
