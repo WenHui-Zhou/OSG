@@ -63,9 +63,8 @@ OSG在VS2012中的环境配置
     #pragma comment(lib,"osgDB.lib")
     #pragma comment(lib,"OpenThreads.lib")
     #pragma comment(lib,"osg.lib")
-    #pragma comment(lib,"OpenGL32.lib")    //解决一些引用了OpenGL函数的“xxx不是xxx的成员的问题”
-    #endif // DEBUG
-    
+    #pragma comment(lib,"OpenGL32.lib")    //解决一些引用了OpenGL函数的“xxx不是xxx的成员的问题”
+    #endif // DEBUG
     #include <osgViewer/Viewer>
     #include <osgDB/ReadFile>
     
