@@ -1,0 +1,37 @@
+osgVolume 例子的使用方法
+=================
+
+osgVolume是osg提供的一个用于体绘制的库函数。运行osgvolume example需要的配置如下：
+
+ - 打开项目属性，链接器，输入，填入如下：
+
+    OpenThreadsd.lib
+    osgd.lib
+    osgDBd.lib
+    osgUtild.lib
+    osgGAd.lib
+    osgViewerd.lib
+    osgTextd.lib
+    osgVolumed.lib
+    osgManipulatord.lib
+    osgFXd.lib
+    OpenThreadsrd.lib
+
+ - 在程序的开头填入：
+
+    #ifdef DEBUG                                   //debug模式
+    #pragma comment(lib,"osgViewerd.lib")
+    #pragma comment(lib,"osgDBd.lib")
+    #pragma comment(lib,"OpenThreadsd.lib")
+    #pragma comment(lib,"osgd.lib")
+    #else                                         //release 模式
+    #pragma comment(lib,"osgViewer.lib")
+    #pragma comment(lib,"osgDB.lib")
+    #pragma comment(lib,"OpenThreads.lib")
+    #pragma comment(lib,"osg.lib")
+    #pragma comment(lib,"OpenGL32.lib")   //找不到 __imp__glGetIntegerv@8 函数，其实在opengl32里头
+    #endif // DEBUG
+
+注意新增#pragma comment(lib,"OpenGL32.lib") 
+
+ -  其他设置见[这里](https://github.com/WenHuiXie/OSG/blob/master/OSG+VS2012%E5%AE%89%E8%A3%85%E5%8F%8A%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.md)
