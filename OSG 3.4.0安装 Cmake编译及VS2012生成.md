@@ -6,13 +6,13 @@ OSG 3.4.0安装 Cmake编译及VS2012生成
 第一步准备工作
 ---
 
-下载OSG源代码：[OSG源码](https://cmake.org/download/)
+下载OSG源代码：[OSG源码](https://github.com/openscenegraph/OpenSceneGraph/tree/OpenSceneGraph-3.4.0)
 
 下载第三方库：[3rdParty](http://members.iinet.net.au/~bchrist/3rdParty_VC10_x86_x64.zip)
 
 下载数据源：[数据源](http://www.openscenegraph.org/downloads/stable_releases/OpenSceneGraph-3.0/data/OpenSceneGraph-Data-3.0.0.zip)
 
-下载编译工具：[Cmake](https://cmake.org/)
+下载编译工具：[Cmake](https://cmake.org/download/)
 
 > Cmake是一个跨平台的安装工具，可以用简单的语句来描述所有平台的安装过程（CmakeLists）。他能过输出各种各样的makefile(适用于linux)或project文件（VS的工程文件等），能够测试编译器所支持的C++特性。Cmake并不直接建构出最终的软件，而是产生标准的建构档，（如Unix的makefile或Windows VS的project/workspaces）。然后在依据相应的集成环境用标准的方式构建软件。
 
